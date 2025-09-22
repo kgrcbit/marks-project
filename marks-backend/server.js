@@ -1,9 +1,11 @@
-require('dotenv').config();
-const express = require('express');
-const mongoose = require('mongoose');
-const cors = require('cors');
-const ExcelJS = require('exceljs');
+
 const basicAuth = require('basic-auth');
+import dotenv from 'dotenv';
+import express from 'express';
+import mongoose from 'mongoose';
+import cors from 'cors';
+import ExcelJS from 'exceljs';
+import basicAuth from 'basic-auth';
 
 const app = express();
 app.use(cors());
