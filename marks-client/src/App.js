@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'; // Make sure to create this for spinner CSS
+import config from "./config";
+
 
 function App() {
   const [rollNo, setRollNo] = useState("");
@@ -14,7 +16,9 @@ function App() {
   });
   const [message, setMessage] = useState(null);
 
-  const API = "http://localhost:4000";
+ 
+  const API = config.API_URL;
+
 
   const handleChange = (q, value) => {
     setMarks(prev => ({ ...prev, [q]: value }));
