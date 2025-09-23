@@ -119,7 +119,7 @@ function App() {
           </form>
 
           <div className="mt-3">
-            <p className="text-muted">Excel download is available from backend.</p>
+            <p className="text-muted"> <p>All rights reserved &#xA9; 2025 CBIT-IT @kgr.</p></p>
           </div>
         </div>
       </div>
