@@ -6,6 +6,7 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 import ExcelJS from 'exceljs';
 import basicAuth from 'basic-auth';
+<<<<<<< HEAD
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import fs from 'fs';
@@ -13,6 +14,8 @@ import path from 'path';
 import ExcelJS from 'exceljs';
 import multer from 'multer';
 
+=======
+>>>>>>> 15b3b55d834546f443163edf09dc682e5582a7c4
 
 const app = express();
 app.use(cors());
@@ -102,6 +105,7 @@ app.get('/export', adminAuth, async (req, res) => {
 });
 
 const PORT = process.env.PORT || 4000;
+<<<<<<< HEAD
 
 // --- Added by integration script: Admin/student auth and Excel upload (improved) ---
 
@@ -243,4 +247,6 @@ app.get('/api/student/:rollno', async (req, res) => {
 
 
 
+=======
+>>>>>>> 15b3b55d834546f443163edf09dc682e5582a7c4
 app.listen(PORT, () => console.log(` Server running on http://localhost:${PORT}`));
